@@ -14,6 +14,7 @@ contract Quest {
         owner=msg.sender;
         balanceOf[msg.sender] = totalSupply;
     }
+    
     function set_owner(address stor) public returns (bool success){
         require(msg.sender==owner, "You can't do it, so Fuck off!!");
         owner=stor;
